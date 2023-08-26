@@ -60,6 +60,10 @@ Through this intricate technical dance, the system ingeniously fuses user input 
 - Run the UI using `streamlit run Web.py`
 - Create `.env` file and add the content `OPENAI_API_KEY=<OPENAI API KEY>`
 
+### OPEN AI API KEY rules:
+
+- As of now API key is available in ```key.txt```. if key is expired, go to ![https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys) to get a free key
+
 ### Expected output
 
 ![generating](./output/Generating.png)

@@ -51,7 +51,7 @@ st.markdown(
 st.title("HashBit PSGCT Incident Resolver")
 
 
-api_key = os.environ.get("OPEN_API_KEY")
+api_key = os.environ.get("OPENAI_API_KEY")
 key_status = True
 if not api_key:
     print('OpenAI API key not found in environment variables.')
@@ -84,7 +84,7 @@ if key_status:
             res = chain({"question": query, "chat_history": []})
             TestLog.info(res["answer"])
             st.session_state.messages.append({"role": "assistant", "content": res["answer"]})
-            print(st.session_state['messages'])
+            # print(st.session_state['messages'])
 
         for message in st.session_state.messages:
             with st.chat_message(message["role"]):

@@ -1,0 +1,242 @@
+[
+  {
+    "type": "FTR",
+    "issue": "File from Upstream Application is not reaching the downstream application folder.",
+    "resolution": "FTR configuration (EDI) was not updated in the downstream application post informatica migration. The config was updated to resolve this issue.",
+    "description": ""
+  },
+  {
+    "type": "FTR",
+    "issue": "Hyperion Essbase script was creating the file in source folder but failed to push it to the target folder.",
+    "resolution": "2 jobs were creating 2 files at the same time which is creating deadlock while pushing the file in FTR. Jobs were rescheduled to fix this issue.",
+    "description": ""
+  },
+  {
+    "type": "FTR",
+    "issue": "Upstream to downstream FTR  failed due to Keys.",
+    "resolution": "SSH keys mismatch, dev team sent the public SSH keys which FTR team updated at their end",
+    "description": ""
+  },
+  {
+    "type": "FTR",
+    "issue": "Files were created in upstream but 0 kb files were sent to downstream.",
+    "resolution": " Autosys team corrected the connection at autosys server end  to Fix it.",
+    "description": ""
+  },
+  {
+    "type": "Essbase",
+    "issue": "OPMN Services are down in Hyperion Essbase server",
+    "resolution": "Essbase is not accessible. Windows team restarted the services to fix it",
+    "description": ""
+  },
+  {
+    "type": "Essbase",
+    "issue": "Essbase server switched from Primary to backup node which is not configured.",
+    "resolution": "Essbase is not accessible, Windows team needs to switch the instance back to resolve the issue.",
+    "description": ""
+  },
+  {
+    "type": "Essbase",
+    "issue": "Essbase config file was corrupted",
+    "resolution": "Essbase server was unreachable. Restore the config file from the backup to fix the issue",
+    "description": ""
+  },
+  {
+    "type": "Database",
+    "issue": "Servers are not accessible due to Diskspace issue",
+    "resolution": "Clean the unwanted large files/logs manually to increase the freespace to fix the issue.",
+    "description": ""
+  },
+  {
+    "type": "Database",
+    "issue": "Treatments are getting failed as no space in Temp DB",
+    "resolution": "Freed Tempdb space to fix the incident.",
+    "description": ""
+  },
+  {
+    "type": "Database",
+    "issue": "Treatments are getting failed in Database as Tablespace is full.",
+    "resolution": "Added more spaceinto the filesystem by DBA team to resolve the issue",
+    "description": ""
+  },
+  {
+    "type": "Database",
+    "issue": "Informatica is down due to DB issue",
+    "resolution": "Db password was expired and reactivation the issue was resolved.",
+    "description": ""
+  },
+  {
+    "type": "Database",
+    "issue": "Application stopped working after DB release",
+    "resolution": "While performing the Changes Dba misunderstood the requirement and decomissioned one active service by mistake. Service was restored by DBA and listeners were restarted to fix this.",
+    "description": ""
+  },
+  {
+    "type": "Database",
+    "issue": "Application is not accessible due to disk crash",
+    "resolution": "Restore the database with backup to fix this issue",
+    "description": ""
+  },
+  {
+    "type": "Database",
+    "issue": "Batch failed in production environment due to DB connectivity issue",
+    "resolution": "DBA parameter threshhold was updated to fix this issue.",
+    "description": ""
+  },
+  {
+    "type": "Application",
+    "issue": "Application GUI was down",
+    "resolution": "restart the App pool for the application to fix it.",
+    "description": ""
+  },
+  {
+    "type": "Server Outage",
+    "issue": "Hardware Failure: Critical server components fail, leading to server unavailability.",
+    "resolution": "AI system detects hardware failures through monitoring and alerts admins for replacement.",
+    "description": "A server becomes unresponsive or inaccessible, affecting services and applications."
+  },
+  {
+    "type": "Server Outage",
+    "issue": "Power Supply Issues: Power disruptions cause servers to shut down unexpectedly.",
+    "resolution": "AI system installs backup power supply and automatically restarts affected servers.",
+    "description": ""
+  },
+  {
+    "type": "Server Outage",
+    "issue": "Network Connectivity Problems: Network connection failures isolate servers from the network.",
+    "resolution": "AI system detects network issues, restarts network services, and logs incidents for review.",
+    "description": ""
+  },
+  {
+    "type": "Server Outage",
+    "issue": "Software Crashes: Critical software running on servers crashes, rendering them unusable.",
+    "resolution": "AI system attempts to restart software, roll back to stable version, or initiate a failover.",
+    "description": ""
+  },
+  {
+    "type": "Server Outage",
+    "issue": "Resource Exhaustion: Server resources such as CPU, memory, or disk space are fully utilized.",
+    "resolution": "AI system allocates additional resources, optimizes processes, or migrates services.",
+    "description": ""
+  },
+  {
+    "type": "Database Performance Degradation",
+    "issue": "Index Fragmentation: Database indexes become fragmented, leading to slow query execution.",
+    "resolution": "AI system schedules regular index maintenance to defragment indexes.",
+    "description": "Database queries and operations slow down, impacting application performance."
+  },
+  {
+    "type": "Database Performance Degradation",
+    "issue": "Data Volume Increase: Growing data volume results in longer query times and performance issues.",
+    "resolution": "AI system optimizes queries, implements query caching, or proposes database partitioning.",
+    "description": ""
+  },
+  {
+    "type": "Database Performance Degradation",
+    "issue": "Resource Contention: Other processes compete for database resources, slowing queries.",
+    "resolution": "AI system adjusts resource allocation, prioritizing critical queries.",
+    "description": ""
+  },
+  {
+    "type": "Database Performance Degradation",
+    "issue": "Query Plan Changes: Database query optimizer generates suboptimal query plans.",
+    "resolution": "AI system analyzes query plans, identifies bottlenecks, and suggests optimizations.",
+    "description": ""
+  },
+  {
+    "type": "Database Performance Degradation",
+    "issue": "Server Misconfiguration: Incorrect database configuration impacts performance.",
+    "resolution": "AI system detects and reverts misconfigurations, restores optimal settings.",
+    "description": ""
+  },
+  {
+    "type": "Network Connectivity Issues",
+    "issue": "DNS Resolution Failures: DNS servers fail to resolve domain names to IP addresses.",
+    "resolution": "AI system verifies DNS server health, switches to backup servers, and logs the incident.",
+    "description": "Users experience connectivity problems, affecting their ability to access resources."
+  },
+  {
+    "type": "Network Connectivity Issues",
+    "issue": "Firewall Blocking: Incorrect firewall rules prevent users from accessing specific resources.",
+    "resolution": "AI system reviews firewall rules, corrects misconfigurations, and ensures proper access.",
+    "description": ""
+  },
+  {
+    "type": "Network Connectivity Issues",
+    "issue": "Router Malfunctions: Network routers malfunction, causing intermittent connectivity issues.",
+    "resolution": "AI system monitors router health, triggers diagnostics, and alerts administrators.",
+    "description": ""
+  },
+  {
+    "type": "Network Connectivity Issues",
+    "issue": "Bandwidth Saturation: Excessive network traffic saturates available bandwidth.",
+    "resolution": "AI system identifies traffic spikes, prioritizes critical traffic, and recommends bandwidth upgrades.",
+    "description": ""
+  },
+  {
+    "type": "Network Connectivity Issues",
+    "issue": "VPN Connectivity Problems: Users encounter problems connecting to the corporate VPN.",
+    "resolution": "AI system monitors VPN connections, troubleshoots failures, and guides users through reconnection.",
+    "description": ""
+  },
+  {
+    "type": "Application Performance Drop",
+    "issue": "Memory Leaks: Applications consume increasing amounts of memory, leading to crashes.",
+    "resolution": "AI system monitors memory usage, triggers cleanups, and restarts affected applications.",
+    "description": "Applications become slow or unresponsive, affecting user experience."
+  },
+  {
+    "type": "Application Performance Drop",
+    "issue": "Compatibility Issues: Application updates cause conflicts with other software components.",
+    "resolution": "AI system tests updates in a sandbox, checks for conflicts, and recommends adjustments.",
+    "description": ""
+  },
+  {
+    "type": "Application Performance Drop",
+    "issue": "Database Connection Failures: Applications cannot connect to the database.",
+    "resolution": "AI system detects connection failures, retries connections, and logs the incident.",
+    "description": ""
+  },
+  {
+    "type": "Application Performance Drop",
+    "issue": "Resource Starvation: Applications compete for system resources, causing slowdowns.",
+    "resolution": "AI system monitors resource usage, optimizes resource allocation, and initiates load balancing.",
+    "description": ""
+  },
+  {
+    "type": "Application Performance Drop",
+    "issue": "External API Failures: Applications rely on external APIs that experience outages or delays.",
+    "resolution": "AI system monitors API status, switches to backup APIs, and retries failed requests.",
+    "description": ""
+  },
+  {
+    "type": "Data Import Failure",
+    "issue": "API Changes: External APIs used for data import change their structure or endpoints.",
+    "resolution": "AI system adapts import scripts, tests new APIs, and updates data mapping.",
+    "description": "Scheduled data import processes fail to transfer and update data."
+  },
+  {
+    "type": "Data Import Failure",
+    "issue": "Data Format Incompatibility: Imported data is in a format not supported by the import process.",
+    "resolution": "AI system identifies data format mismatches, transforms data, and retries imports.",
+    "description": ""
+  },
+  {
+    "type": "Data Import Failure",
+    "issue": "Network Disruptions: Network connectivity issues prevent data transfer from external sources.",
+    "resolution": "AI system monitors network status, retries transfers, and alerts administrators.",
+    "description": ""
+  },
+  {
+    "type": "Data Import Failure",
+    "issue": "Authentication Failures: Access credentials for external sources are incorrect or expired.",
+    "resolution": "AI system updates credentials, attempts reauthentication, and logs incidents.",
+    "description": ""
+  },
+  {
+    "type": "Data Import Failure",
+    "issue": "Data Volume Overload: Large data volumes overwhelm the import process.",
+    "resolution": "AI system optimizes data import jobs, batches data transfers, and adjusts processing times.",
+    "description": ""
+  }
+]

@@ -53,8 +53,7 @@ Through this intricate technical dance, the system ingeniously fuses user input 
 
 
 ### Limitation of the system :
-- Open AI provides a free API which has cap limit of 3 queries per minute (20 seconds between successive queries)
-- 
+- Open AI provides a free API which has cap limit of 3 queries per minute (minimum 20 seconds between successive queries)
 
 ### Running of System
 

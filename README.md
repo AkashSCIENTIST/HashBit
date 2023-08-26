@@ -58,5 +58,10 @@ Through this intricate technical dance, the system ingeniously fuses user input 
 
 ### Running of System
 
-Install the dependencies using ```pip install -r requirements.txt```
-Run the UI using ```streamlit run Web.py```
+- Install the dependencies using ```pip install -r requirements.txt```
+- Run the UI using ```streamlit run Web.py```
+
+### Expected output
+
+![generating](./output/Generating.png)
+![generated](./output/Generated.png)
